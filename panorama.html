@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site made with Mobirise Website Builder v3.7.3, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.7.3, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+   <link rel="stylesheet" href="https://cdn.pannellum.org/2.2/pannellum.css"/>
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  
+  
+  
+</head>
+<body>
+<canvas id="gl" style="display: none;"></canvas>
+
+<div id="panorama" style="display: inline; z-index: -1;"></div>
+
+
+
+<div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggless navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Berlin 1880</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                
+                                <li id="one">
+                                    <a onclick="setImage(0)">Schinkelplatz</a>
+                                </li>
+
+                                <li id="two">
+                                    <a onclick="setImage(1)">Zeughaus</a>
+                                </li>
+                                
+                                <li id="three">
+                                    <a onclick="setImage(2)">Schlossbrücke</a>
+                                </li>
+
+                                <li id="four">
+                                    <a onclick="setImage(3)">Lustgarten</a>
+                                </li>
+                                
+                                <li id="five">
+                                    <a onclick="setImage(4)">Schlossbrücke 2</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <script src="assets/mobirise/js/script.js"></script>
+
+  <script type="text/javascript" src="https://cdn.pannellum.org/2.2/pannellum.js"></script>
+  <script src="js/panorama.js"></script>
+
+  <script>
+    $('.nav a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.2/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.2/pannellum.js"></script>
+    <style>
+    #panorama {
+         width: 1920px; 
+         height: 1080px; 
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+var elm = document.getElementById('panorama');
+//elm.width = window.innerWidth;
+//elm.height = window.innerHeight;
+
+elm.width = 500;
+elm.height = 500;
+
+
+
+var viewer = pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    //"panorama": "https://pannellum.org/images/alma.jpg"
+    "panorama": "uploads/file.jpg",
+
+    "showFullscreenCtrl" : false,
+    "showZoomCtrl" : false,
+
+    //"hotSpotDebug": true,
+    "hotSpots": [
+        {
+            "pitch": -5.1,
+            "yaw": -135.5,
+            "type": "info",
+            "text": "Damals gang und gäbe: Fliegende Menschen",
+            "URL": "http://sfglobe.com/?id=3638"
+        }
+        ]
+});
+
+
+var renderer = viewer.getRenderer();
+
+console.log(renderer);
+
+
+
+</script>
+
+</body>
+</html>
