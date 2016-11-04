@@ -7,6 +7,8 @@ var isMobile = false;
 var actConfig = {};
 
 
+
+
 if(gl.getParameter(gl.MAX_TEXTURE_SIZE) >= 8192){
     console.log('can 8k');
     can8k = true;
@@ -20,7 +22,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 console.log('max texture width ' + gl.getParameter(gl.MAX_TEXTURE_SIZE));
 
 
-
+        
 
 		var actImage = 1;
         var imageInt = 1;
@@ -139,18 +141,18 @@ console.log('max texture width ' + gl.getParameter(gl.MAX_TEXTURE_SIZE));
 
                 elm.setAttribute("style", "height:" + window.innerHeight + "px;");
 
-                 actViewer = pannellum.viewer('panorama', actConfig);
-            
+                actViewer = pannellum.viewer('panorama', actConfig);
 
-              //  var renderer = viewer.getRenderer();
-
-              //  console.log(renderer);
-
+                
 }
 
 	function unloadViewer(){
 		console.log('unload viewer');
-	    actViewer = null;
+        if(actViewer != null){
+            console.log("act renderer " + actViewer.getRenderer());
+            actViewer.getRenderer().destroy();
+	       actViewer = null;
+        }
 	}
 
 
