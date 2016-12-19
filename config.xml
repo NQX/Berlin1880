@@ -83,4 +83,20 @@
     <title><![CDATA[Kufpergraben]]></title>
     <caption><![CDATA[]]></caption>
   </image>
+  <image imageURL="images/Friedrichsbruecke.jpg"
+	thumbURL="thumbs/Friedrichsbruecke.jpg"
+	linkURL="images/Friedrichsbruecke.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/tobiaszillmer/Desktop/Berlin1880/Montags Tobi/Friedrichsbruecke.jpg">
+    <title><![CDATA[Friedrichsbrücke]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/337_bearb_blick_Packhof_kupfergraben-PS.jpg"
+	thumbURL="thumbs/337_bearb_blick_Packhof_kupfergraben-PS.jpg"
+	linkURL="images/337_bearb_blick_Packhof_kupfergraben-PS.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/tobiaszillmer/Desktop/Berlin1880/Montags Tobi/337_bearb_blick_Packhof_kupfergraben-PS.jpg">
+    <title><![CDATA[Blick in den Kupfergraben]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
 </juiceboxgallery>

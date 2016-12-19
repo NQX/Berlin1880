@@ -10,7 +10,6 @@ var actConfig = {};
 
 
 if(gl.getParameter(gl.MAX_TEXTURE_SIZE) >= 8192){
-    console.log('can 8k');
     can8k = true;
 }
 
@@ -85,12 +84,11 @@ console.log('max texture width ' + gl.getParameter(gl.MAX_TEXTURE_SIZE));
 	function setImage(value){
         
 
-		console.log('set image ' + navbarValue[value]);
+		console.log(value);
 
         $('#'+navbarValue[imageInt-1]).removeClass('active');
 
-        console.log(imageInt);
-        console.log("old value " + navbarValue[imageInt-1]);
+        
         $('#'+navbarValue[value]).addClass("active");
         
 
@@ -115,7 +113,7 @@ console.log('max texture width ' + gl.getParameter(gl.MAX_TEXTURE_SIZE));
 		var elm = document.getElementById('panorama');
 
 
-		console.log('load viewer ' + elm);
+		
 
 
                 //elm.width = 50;
@@ -147,9 +145,9 @@ console.log('max texture width ' + gl.getParameter(gl.MAX_TEXTURE_SIZE));
 }
 
 	function unloadViewer(){
-		console.log('unload viewer');
+		
         if(actViewer != null){
-            console.log("act renderer " + actViewer.getRenderer());
+         
             actViewer.getRenderer().destroy();
 	       actViewer = null;
         }
